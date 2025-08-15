@@ -510,6 +510,26 @@
         "when": "explorerResourceIsFolder && explorerViewletVisible && filesExplorerFocus && !inputFocus"
     },
 
+    //chat settings
+    {
+        "key": "shift+cmd+i",
+        "command": "workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "ctrl+cmd+i",
+        "command": "-workbench.panel.chat",
+        "when": "workbench.panel.chat.view.copilot.active"
+    },
+    {
+        "key": "cmd+m ;",
+        "command": "workbench.action.chat.history"
+    },
+    {
+        "key": "cmd+m f",
+        "command": "workbench.action.chat.clearHistory"
+    },
+
     //system settings
     {
         "key": "alt+cmd+s",

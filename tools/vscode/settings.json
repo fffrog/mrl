@@ -117,6 +117,9 @@
         "MD033": false
     },
 
+    //chat settings
+    "chat.agent.enabled": false,
+
     //c_cpp settings
     "C_Cpp.default.cStandard": "c11",
     "C_Cpp.default.cppStandard": "c++20",
