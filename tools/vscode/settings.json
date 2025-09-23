@@ -61,11 +61,6 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.shellIntegration.enabled": true,
-    "terminal.integrated.env.osx": {
-        "GOPROXY": "https://goproxy.cn,direct",
-        "GOSUMDB": "sum.golang.google.cn",
-        "GO111MODULE": "on"
-    },
 
     //debug settings
     "debug.inlineValues": "off",
@@ -152,10 +147,6 @@
         "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
     ],
 
-    //python settings
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter"
-    },
     "python.analysis.typeCheckingMode": "basic",
     "python.terminal.activateEnvironment": false,
     "python.envFile": "${workspaceFolder}/.vscode/env"
