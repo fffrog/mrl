@@ -19,7 +19,10 @@ void A::set(const int& a) {
 int main()
 {
     cout << boost::typeindex::type_id_with_cvr<decltype(&A::get)>().pretty_name() << std::endl;
+    // Compilation Error
+    // cout << boost::typeindex::type_id_with_cvr<decltype(A::get)>().pretty_name() << std::endl;
     cout << boost::typeindex::type_id_with_cvr<decltype(&A::set)>().pretty_name() << std::endl;
+    cout << boost::typeindex::type_id_with_cvr<decltype(A::set)>().pretty_name() << std::endl;
 
     return 0;
 }
