@@ -525,10 +525,6 @@
         "key": "cmd+m ;",
         "command": "workbench.action.chat.history"
     },
-    {
-        "key": "cmd+m f",
-        "command": "workbench.action.chat.clearHistory"
-    },
 
     //system settings
     {
