@@ -86,8 +86,9 @@
     "git.detectSubmodules": false,
     "git.detectSubmodulesLimit": 30,
 
-    //chat settings
-    "chat.mcp.gallery.enabled": true,
+    //claude code settings
+    "claudeCode.disableLoginPrompt": true,
+    "claudeCode.preferredLocation": "panel",
 
     //vim settings
     "vim.useCtrlKeys": true,
