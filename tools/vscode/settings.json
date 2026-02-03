@@ -88,7 +88,6 @@
 
     //claude code settings
     "claudeCode.disableLoginPrompt": true,
-    "claudeCode.preferredLocation": "panel",
 
     //vim settings
     "vim.useCtrlKeys": true,
