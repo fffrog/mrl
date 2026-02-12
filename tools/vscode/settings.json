@@ -90,6 +90,9 @@
     "claudeCode.disableLoginPrompt": true,
     "claudeCode.preferredLocation": "panel",
 
+    //chat settings
+    "chat.mcp.gallery.enabled": true,
+
     //vim settings
     "vim.useCtrlKeys": true,
     "vim.useSystemClipboard": true,
