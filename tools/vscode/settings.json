@@ -86,10 +86,6 @@
     "git.detectSubmodules": false,
     "git.detectSubmodulesLimit": 30,
 
-    //claude code settings
-    "claudeCode.disableLoginPrompt": true,
-    "claudeCode.preferredLocation": "panel",
-
     //chat settings
     "chat.mcp.gallery.enabled": true,
 
