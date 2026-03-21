@@ -2,22 +2,58 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C",
+            "name": "C++ Launch",
             "type": "cppdbg",
             "request": "launch",
-            "args": [],
-            "environment": [],
             "cwd": "${workspaceFolder}",
-            "program": "${workspaceFolder}/linux/vmlinux",
+            "program": "/usr/local/anaconda3/envs/312/bin/python",
+            "args": [
+                "${workspaceFolder}/samples/demo.py"
+            ],
+            "environment": [
+                {
+                    "name": "TORCH_SHOW_DISPATCH_TRACE",
+                    "value": "0"
+                },
+            ],
             "MIMode": "gdb",
-            "miDebuggerServerAddress": "127.0.0.1:1234",
-            "targetArchitecture": "arm64",
+            "targetArchitecture": "x86_64",
             "stopAtEntry": false,
             "externalConsole": false,
-            // sourceFileMap 此项请根据具体情况决定是否配置以及具体配置值
-            "sourceFileMap": {
-                "/root/Git.d/c/linux": "/root/Git.d/c/linux/linux"
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Python Launch",
+            "type": "debugpy",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "python": "/usr/local/anaconda3/envs/312/bin/python",
+            "env": {
+                "TORCH_SHOW_CPP_STACKTRACES": "0",
+                "TORCH_SHOW_DISPATCH_TRACE": "0",
+                // "PYTORCH_TEST_WITH_DYNAMO":"1",
+                "TORCHINDUCTOR_FORCE_DISABLE_CACHES": "1",
+                "TORCHINDUCTOR_COMPILE_THREADS": "1",
+                // "PYTHONPATH": "/root/Git.d/pytorch/triton/python/triton:/root/Git.d/pytorch/pytorch/third_party/pybind11"
+            },
+            "program": "${workspaceFolder}/samples/compiler/aot/aot_function.py",
+            "justMyCode": false
+        },
+        {
+            "name": "Python Attach",
+            "type": "debugpy",
+            "request": "attach",
+            "connect": {
+                "host": "localhost",
+                "port": 5678
             }
         }
     ]
 }
+

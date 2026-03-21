@@ -4,28 +4,45 @@
         {
             "name": "Linux",
             "cStandard": "c11",
-            "cppStandard": "c++11",
-            "intelliSenseMode": "linux-gcc-arm64",
-            "compilerPath": "/usr/bin/gcc",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "compilerPath": "/usr/bin/g++",
             "defines": [
                 "_DEBUG",
                 "UNICODE"
             ],
             "includePath": [
-                "/usr/lib/gcc/aarch64-linux-gnu/7.3.0/include",
+                "/usr/include/c++/11",
+                "/usr/include/x86_64-linux-gnu/c++/11",
+                "/usr/include/c++/11/backward",
+                "/usr/lib/gcc/x86_64-linux-gnu/11/include",
                 "/usr/local/include",
+                "/usr/include/x86_64-linux-gnu",
                 "/usr/include",
-                "${workspaceFolder}/linux/**"
+                "/usr/local/anaconda3/envs/312/include/python3.12/**",
+                "${workspaceFolder}/cpython/**",
+                "${workspaceFolder}/pytorch/torch/**",
+                "${workspaceFolder}/triton/**",
+                "${workspaceFolder}/northbound/**",
             ],
             "browse": {
                 "path": [
-                    "/usr/lib/gcc/aarch64-linux-gnu/7.3.0/include",
+                    "/usr/include/c++/11",
+                    "/usr/include/x86_64-linux-gnu/c++/11",
+                    "/usr/include/c++/11/backward",
+                    "/usr/lib/gcc/x86_64-linux-gnu/11/include",
                     "/usr/local/include",
+                    "/usr/include/x86_64-linux-gnu",
                     "/usr/include",
-                    "${workspaceFolder}/linux"
+                    "/usr/local/anaconda3/envs/312/include/python3.12",
+                    "${workspaceFolder}/cpython",
+                    "${workspaceFolder}/pytorch/torch",
+                    "${workspaceFolder}/triton",
+                    "${workspaceFolder}/northbound",
                 ],
                 "limitSymbolsToIncludedHeaders": true
             }
         }
     ]
 }
+
