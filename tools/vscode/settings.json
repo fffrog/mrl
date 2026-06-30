@@ -76,7 +76,7 @@
     "timeline.pageOnScroll": true,
 
     //extensions settings
-    "extensions.autoUpdate": false,
+    "extensions.autoUpdate": "off",
     "extensions.ignoreRecommendations": true,
 
     //oneDarkPro settings
